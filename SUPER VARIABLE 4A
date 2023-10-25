@@ -1,0 +1,21 @@
+class parent {
+int x,y;
+void input(int a,int b) {
+x=a;
+y=b; } }
+class child extends parent {
+int x,z;
+void get(int c,int d) {
+x=c;
+z=d;}
+void display() {
+System.out.println("x="+super.x);
+System.out.println("y="+super.y);
+System.out.println("x="+x);
+System.out.println("z="+z); } }
+class sample {
+public static void main(String args[]) {
+child c= new child();
+c.input(5,10);
+c.get(15,20);
+c.display(); } }
