@@ -1,0 +1,12 @@
+import java.io.*;
+public class input {
+public static void main(String args[])throws IOException {
+FileWriter fw = new FileWriter("nawin.txt");
+fw.write("welcome to Telangana");
+fw.close();
+FileReader fr = new FileReader("nawin.txt");
+int c;
+while((c=fr.read())!=-1)
+{
+System.out.print((char)c); }
+} }
