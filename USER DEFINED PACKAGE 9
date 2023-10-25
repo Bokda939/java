@@ -1,0 +1,17 @@
+package pack;
+public class add {
+int a,b,c;
+public void input(int x,int y) {
+a=x;
+b=y; }
+public void sum() {
+c=a+b;
+System.out.println("sum="+c); } }
+#over.java
+import pack.add;
+class over {
+public static void main(String args[]) {
+add a = new add();
+a.input(5,5);
+a.sum();
+} }
