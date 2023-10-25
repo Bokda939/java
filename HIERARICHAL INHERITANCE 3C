@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.Scanner;
+class vehicle {
+String name,fuel;
+double cost,speed;
+Scanner sc = new Scanner(System.in);
+void input() {
+System.out.println("Enter name of the model:");
+name = sc.next();
+System.out.println("Enter fuel:");
+fuel=sc.next();
+System.out.println("Enter cost:");
+cost=sc.nextDouble(); }
+void display() {
+System.out.println("name:"+name+" "+"fuel:"+fuel+" "+"cost:"+cost+" "+"speed:"+speed); } }
+class ferrai extends vehicle {
+void speed() {
+System.out.println("Enter speed in km/hr:");
+speed=sc.nextDouble(); } }
+class bmw extends vehicle {
+void speed() {
+System.out.println("Enter speed in km/hr:");
+speed=sc.nextDouble(); } }
+class main {
+public static void main(String args[]) {
+ferrai f = new ferrai();
+f.input();
+f.speed();
+f.display();
+bmw b = new bmw();
+b.input();
+b.speed();
+b.display(); } }
