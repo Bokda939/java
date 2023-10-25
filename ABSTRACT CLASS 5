@@ -1,0 +1,20 @@
+abstract class exam {
+int a,b;
+void get() {
+a=98;
+b=56; }
+abstract void calc(); }
+class test extends exam {
+int gcd;
+void calc() {
+int i;
+for(i=1;i<=a&&i<=b;i++)
+{
+if(a%i==0&&b%i==0)
+{
+gcd=i; } }
+System.out.println("gcd of"+" "+a+" "+"and"+" "+b+" "+"is"+" "+gcd); }
+public static void main(String args[]) {
+test e = new test();
+e.get();
+e.calc(); } }
