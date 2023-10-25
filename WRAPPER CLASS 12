@@ -1,0 +1,19 @@
+import java.io.*;
+public class wrapper {
+public static void main(String args[]) {
+int num =19648;
+System.out.println(num+"in binary:"+" "+Integer.toBinaryString(num));
+System.out.println(num+"in Hexadecimal:"+" "+Integer.toHexString(num));
+System.out.println(num+"in octal:"+" "+Integer.toOctalString(num)); } }
+               OR
+Program:
+import java.io.*;
+public class wrap {
+public static void main(String args[]) {
+long start,end;
+System.out.println("timing a for loop 0 to 1,000,000");
+start=System.currentTimeMillis();
+for(int i=0;i<1000000;i++);
+end=System.currentTimeMillis();
+System.out.println("elapsed time="+(end-start));
+} }
