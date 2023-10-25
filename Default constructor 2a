@@ -1,0 +1,28 @@
+class employee_sal {
+String name,empno;
+int basic;
+double da,hra,pf,gross,net;
+employee_sal() {
+name="naveen";
+empno="ap24am9286";
+basic=50000; }
+void compute() {
+da=basic*0.30;
+hra=basic*0.15;
+pf=basic*0.12;
+gross=basic+da+hra;
+net=gross-pf; }
+void display() {
+System.out.println("name="+name);
+System.out.println("empno="+empno);
+System.out.println("gross="+gross);
+System.out.println("net salary="+net); }
+public static void main(String args[]) {
+employee_sal e = new employee_sal();
+e.compute();
+e.display(); } }
+Output:
+name=naveen
+empno=ap24am9286
+gross=72500.0
+net salary=66500.0
