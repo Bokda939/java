@@ -1,0 +1,19 @@
+class employee {
+String ename;
+int eid;
+employee(String n,int i) {
+ename=n;
+eid=i; }}
+class salary extends employee {
+double sal;
+salary(String n,int i,double s) {
+super(n,i);
+sal=s; }
+void display() {
+System.out.println("employee name="+ename);
+System.out.println("employee id="+eid);
+System.out.println("employee salary="+sal); }}
+class empl {
+public static void main(String args[]) {
+salary a = new salary("naveen",42110189,20000.00);
+a.display(); } }
