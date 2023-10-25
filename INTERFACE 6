@@ -1,0 +1,21 @@
+interface shapes {
+final int a=10;
+final int b=20;
+abstract void area();
+}
+class rectangle implements shapes {
+int c;
+public void area(){
+c=a*b;
+System.out.println("Area of Rectangle="+c); } }
+class triangle implements shapes {
+double d;
+public void area() {
+d=1/2.0*(a*b);
+System.out.println("Area of Triangle="+d); } }
+class testing {
+public static void main(String args[]) {
+rectangle r = new rectangle();
+r.area();
+triangle t = new triangle();
+t.area(); } }
