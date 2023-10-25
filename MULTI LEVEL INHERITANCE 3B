@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class student {
+String name;
+int age;
+void input(String n,int a) {
+name=n;
+age=a; }}
+class sub extends student {
+int m1,m2;
+void get(int m,int n)
+{
+m1=m;
+m2=n; } }
+class info extends sub {
+double avg,total;
+void calc() {
+total=m1+m2;
+avg=total/2.0; }
+void display() {
+System.out.println("name="+name);
+System.out.println("age="+age);
+System.out.println("m1="+m1);
+System.out.println("m2="+m2);
+System.out.println("total="+total);
+System.out.println("average="+avg); } }
+class std {
+public static void main(String args[]) {
+int y,z,t;
+String x;
+info f = new info();
+Scanner sc = new Scanner(System.in);
+x=sc.next();
+y=sc.nextInt();
+z=sc.nextInt();
+t=sc.nextInt();
+f.input(x,y);
+f.get(z,t);
+f.calc();
+f.display(); } }
