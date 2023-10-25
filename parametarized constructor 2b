@@ -1,0 +1,23 @@
+class empl_sal {
+String name,empno;
+int basic;
+double da,hra,pf,gross,net;
+empl_sal(String n,String e,int b) {
+name = n;
+empno = e;
+basic = b; }
+void compute() {
+da=basic*0.30;
+hra=basic*0.15;
+pf=basic*0.12;
+gross=basic+da+hra;
+net=gross-pf; }
+void display() {
+System.out.println("name="+name);
+System.out.println("empno="+empno);
+System.out.println("gross="+gross);
+System.out.println("net salary="+net); }
+public static void main(String args[]) {
+empl_sal e = new empl_sal("naveen","ap24am9286",20000);
+e.compute();
+e.display(); } }
