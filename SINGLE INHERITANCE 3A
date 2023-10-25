@@ -1,0 +1,33 @@
+import java.util.*;
+class products {
+String pname;
+int pno,quantity;
+void input(int no,String p,int q) {
+pname=p;
+pno=no;
+quantity=q; } }
+class sales extends products {
+double rate,amount;
+void get(double r) {
+rate=r;
+amount=rate*quantity; }
+void display() {
+System.out.println("pname="+pname);
+System.out.println("pno="+pno);
+System.out.println("quantity="+quantity);
+System.out.println("rate="+rate);
+System.out.println("amount="+amount); }}
+class shop {
+public static void main(String args[]) {
+int x,z;
+String y;
+double t;
+sales s = new sales();
+Scanner sc = new Scanner(System.in);
+x=sc.nextInt();
+y=sc.next();
+z=sc.nextInt();
+t=sc.nextDouble();
+s.input(x,y,z);
+s.get(t);
+s.display(); } }
