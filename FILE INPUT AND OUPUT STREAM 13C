@@ -1,0 +1,22 @@
+import java.io.*;
+public class output {
+public static void main(String args[])throws IOException {
+FileOutputStream fos = new FileOutputStream("sunil.txt");
+String s = "welcome to Nalgonda";
+byte b[] = s.getBytes();
+fos.write(b);
+fos.flush();
+fos.close();
+System.out.println("Successfully written");
+try {
+FileInputStream fis = new FileInputStream("sunil.txt");
+int c;
+while((c=fis.read())!=-1) {
+System.out.print((char)c);
+}
+fis.close();
+}
+catch(Exception e)
+{
+}
+}}
