@@ -1,0 +1,19 @@
+import java.io.*;
+public class stream {
+public static void main(String args[])throws IOException {
+FileOutputStream fos = new FileOutputStream("navi.txt");
+DataOutputStream dos = new DataOutputStream(fos);
+dos.writeInt(65);
+dos.writeInt(66);
+dos.write(67);
+dos.flush();
+dos.close();
+System.out.println("Successfully written");
+FileInputStream fis = new FileInputStream("navi.txt");
+DataInputStream dis = new DataInputStream(fis);
+int data;
+while((data=fis.read())!=-1)
+{
+System.out.println("data="+data); }
+System.out.println("Successfully Read");
+} }
